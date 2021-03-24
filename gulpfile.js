@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const del = require('del');
 
-const srcFolder = './src/scss/*.scss';
+const srcFolder = './src/scss/*';
 const destFolder = './src/css/';
 
 gulp.task('styles', () => {
