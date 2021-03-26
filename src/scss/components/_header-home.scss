@@ -13,5 +13,13 @@ header {
 
     img {
         width: 45%;
+
+        @media screen and (min-width: $tablet-breakpoint) {
+            width: 30%;
+        }
+
+        @media screen and (min-width: $computer-breakpoint) {
+            width: 10%;
+        }
     }
 }
