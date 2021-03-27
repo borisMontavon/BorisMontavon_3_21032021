@@ -1,0 +1,125 @@
+#restaurants {
+    margin: 50px auto;
+    width: 90%;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.restaurant-container {
+    background-color: $white;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 1rem;
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.2);
+
+    span {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: $middle-blue-green;
+        color: $spanish-viridian;
+        padding: 8px 15px;
+        border-radius: 0.15rem;
+        font-size: $mobile-link-size;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+}
+
+#restaurant-img-1 {
+    background-image: url("../../../assets/images/la-palette-du-gout.webp");
+    background-position: 50% 80%;
+}
+
+#restaurant-img-2 {
+    background-image: url("../../../assets/images/la-note-enchantee.webp");
+    background-position: 50% 80%;
+}
+
+#restaurant-img-3 {
+    background-image: url("../../../assets/images/a-la-francaise.webp");
+    background-position: 50% 80%;
+}
+
+#restaurant-img-4 {
+    background-image: url("../../../assets/images/le-delice-des-sens.webp");
+    background-position: 50% 80%;
+}
+
+.restaurant-img-display {
+    width: 100%;
+    height: 175px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.restaurant-label {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.restaurant-info {
+    padding: 15px;
+
+    p {
+        line-height: 25px;
+
+        &:last-child {
+            font-weight: 300;
+        }
+    }
+}
+
+.heart-container {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+}
+ 
+.heart-clip {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    clip-path: url(#svgPath);
+
+    &:hover {
+        &::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $amethyst;
+        opacity: 0;
+        transform: scale(0);
+        transition: transform 0.2s linear, opacity 0.2s linear;
+        transform-origin: center 60%;
+    }
+}
+
+.heart-stroke {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: $amethyst;
+}

@@ -22,7 +22,11 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  background-color: #F6F6F6;
   font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none; }
 
 /* -----Header styles----- */
 header {
@@ -31,6 +35,7 @@ header {
   align-items: center;
   width: 100%;
   height: 70px;
+  background-color: #fff;
   -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -101,12 +106,16 @@ header {
         cursor: pointer; } }
 
 #running {
-  margin: 50px auto;
+  background-color: #fff; }
+
+#running-skin {
+  margin: 0 auto;
+  padding: 50px 0;
   width: 90%; }
-  #running h2 {
+  #running-skin h2 {
     margin-bottom: 20px; }
     @media screen and (min-width: 768px) {
-      #running h2 {
+      #running-skin h2 {
         text-align: center; } }
 
 #running-container {
@@ -162,6 +171,106 @@ header {
   .running-item .running-item-color-skin {
     background-color: #F5EDFF; }
 
+#restaurants {
+  margin: 50px auto;
+  width: 90%; }
+  #restaurants h2 {
+    margin-bottom: 20px; }
+
+.restaurant-container {
+  background-color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 1rem;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2); }
+  .restaurant-container span {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 8px 15px;
+    border-radius: 0.15rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px; }
+
+#restaurant-img-1 {
+  background-image: url("../../../assets/images/la-palette-du-gout.webp");
+  background-position: 50% 80%; }
+
+#restaurant-img-2 {
+  background-image: url("../../../assets/images/la-note-enchantee.webp");
+  background-position: 50% 80%; }
+
+#restaurant-img-3 {
+  background-image: url("../../../assets/images/a-la-francaise.webp");
+  background-position: 50% 80%; }
+
+#restaurant-img-4 {
+  background-image: url("../../../assets/images/le-delice-des-sens.webp");
+  background-position: 50% 80%; }
+
+.restaurant-img-display {
+  width: 100%;
+  height: 175px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem 1rem 0 0; }
+
+.restaurant-label {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative; }
+
+.restaurant-info {
+  padding: 15px; }
+  .restaurant-info p {
+    line-height: 25px; }
+    .restaurant-info p:last-child {
+      font-weight: 300; }
+
+.heart-container {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  z-index: 99; }
+
+.heart-clip {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  clip-path: url(#svgPath); }
+  .heart-clip:hover::before {
+    transform: scale(1);
+    opacity: 1; }
+  .heart-clip::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #9356DC;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.2s linear, opacity 0.2s linear;
+    transform-origin: center 60%; }
+
+.heart-stroke {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: #9356DC; }
+
 footer {
   width: 100%;
   height: 250px;
@@ -185,7 +294,6 @@ footer {
       text-align: center; }
       footer ul li a {
         color: #fff;
-        text-decoration: none;
         font-weight: 300;
         line-height: 30px; }
         footer ul li a:visited {
