@@ -25,6 +25,43 @@
     height: 250px;
 }
 
+.menu-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+
+    h2 {
+        font-family: $shrikhand;
+    }
+
+    .heart-container {
+        margin-right: 25px;
+    }
+}
+
 .menu-plates {
     background-color: $cultured;
+    border-radius: 2.25rem 2.25rem 0 0;
+    padding: 30px 15px;
+    transform: translate3d(0, -45px, 0);
+}
+
+.plates {
+    h4 {
+        text-transform: uppercase;
+        font-weight: 300;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 40px;
+            height: 3px;
+            background-color: $middle-blue-green;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+    }
 }
