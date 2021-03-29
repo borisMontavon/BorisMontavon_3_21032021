@@ -1,0 +1,123 @@
+/* -----Raleway font import----- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* -----Variables----- */
+/* Colors */
+/* Font */
+/* Font-size */
+/* Breakpoint */
+/* -----Global styles----- */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box; }
+
+::selection {
+  background-color: #9356DC;
+  color: #fff;
+  text-shadow: none; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #F6F6F6;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+/* -----Header styles----- */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2; }
+  header img {
+    width: 45%; }
+    @media screen and (min-width: 768px) {
+      header img {
+        width: 30%; } }
+    @media screen and (min-width: 1200px) {
+      header img {
+        width: 10%; } }
+  header i {
+    font-size: 1.2rem;
+    color: #000;
+    position: absolute;
+    left: 30px;
+    top: 25px; }
+    @media screen and (min-width: 768px) {
+      header i {
+        font-size: 1.5rem;
+        top: 24px; } }
+
+#menu-img-1 {
+  background-image: url("../../../../assets/images/la-palette-du-gout.webp");
+  background-position: 50% 50%; }
+
+#menu-img-2 {
+  background-image: url("../../../../assets/images/la-note-enchantee.webp");
+  background-position: 50% 50%; }
+
+#menu-img-3 {
+  background-image: url("../../../../assets/images/a-la-francaise.webp");
+  background-position: 50% 50%; }
+
+#menu-img-4 {
+  background-image: url("../../../../assets/images/le-delice-des-sens.webp");
+  background-position: 50% 50%; }
+
+.menu-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px; }
+
+.menu-plates {
+  background-color: #F6F6F6; }
+
+footer {
+  width: 100%;
+  height: 225px;
+  background-color: #333;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+  footer img {
+    width: 30%;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      footer img {
+        width: 20%; } }
+    @media screen and (min-width: 1200px) {
+      footer img {
+        width: 12.5%; } }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      text-align: center; }
+      footer ul li a {
+        color: #fff;
+        font-weight: 300;
+        line-height: 30px; }
+        footer ul li a:visited {
+          color: #fff; }
+        @media screen and (min-width: 1200px) {
+          footer ul li a {
+            transition: 0.3s; }
+            footer ul li a:hover {
+              color: #9356DC; } }
+        footer ul li a i {
+          padding-right: 15px;
+          font-size: 0.9rem; }
+  footer .fw-bold {
+    font-weight: 500; }

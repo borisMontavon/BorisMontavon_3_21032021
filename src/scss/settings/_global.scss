@@ -17,5 +17,10 @@ html {
 }
 
 body {
+    background-color: $cultured;
     font-family: $roboto;
+}
+
+a {
+    text-decoration: none;
 }

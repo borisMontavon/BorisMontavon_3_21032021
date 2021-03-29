@@ -1,0 +1,30 @@
+#menu-img-1 {
+    background-image: url("../../../../assets/images/la-palette-du-gout.webp");
+    background-position: 50% 50%;
+}
+
+#menu-img-2 {
+    background-image: url("../../../../assets/images/la-note-enchantee.webp");
+    background-position: 50% 50%;
+}
+
+#menu-img-3 {
+    background-image: url("../../../../assets/images/a-la-francaise.webp");
+    background-position: 50% 50%;
+}
+
+#menu-img-4 {
+    background-image: url("../../../../assets/images/le-delice-des-sens.webp");
+    background-position: 50% 50%;
+}
+
+.menu-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+}
+
+.menu-plates {
+    background-color: $cultured;
+}
