@@ -10,7 +10,8 @@
     h2 {
         margin-bottom: 20px;
 
-        @media screen and (min-width: $tablet-breakpoint) {
+        @media screen and (min-width: $tablet-breakpoint),
+        screen and (max-width: 768px) and (orientation: landscape) {
             text-align: center;
         }
     }
@@ -20,6 +21,10 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+
+    @media screen and (max-width: 768px) and (orientation: landscape) {
+        justify-content: center;
+    }
 
     @media screen and (min-width: $tablet-breakpoint) {
         flex-flow: column wrap;

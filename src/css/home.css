@@ -48,6 +48,16 @@ header {
     @media screen and (min-width: 1200px) {
       header img {
         width: 10%; } }
+  header i {
+    font-size: 1.2rem;
+    color: #000;
+    position: absolute;
+    left: 30px;
+    top: 25px; }
+    @media screen and (min-width: 768px) {
+      header i {
+        font-size: 1.5rem;
+        top: 24px; } }
 
 #loader-container {
   background-color: rgba(0, 0, 0, 0.6);
@@ -169,7 +179,7 @@ header {
   width: 90%; }
   #running-skin h2 {
     margin-bottom: 20px; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px), screen and (max-width: 768px) and (orientation: landscape) {
       #running-skin h2 {
         text-align: center; } }
 
@@ -177,6 +187,9 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end; }
+  @media screen and (max-width: 768px) and (orientation: landscape) {
+    #running-container {
+      justify-content: center; } }
   @media screen and (min-width: 768px) {
     #running-container {
       flex-flow: column wrap; } }
@@ -275,19 +288,22 @@ header {
     letter-spacing: 0.5px; }
 
 #restaurant-img-1 {
-  background-image: url("../../../assets/images/la-palette-du-gout.webp");
+  background-image: url("../../../../assets/images/la-palette-du-gout.webp");
   background-position: 50% 80%; }
 
 #restaurant-img-2 {
-  background-image: url("../../../assets/images/la-note-enchantee.webp");
+  background-image: url("../../../../assets/images/la-note-enchantee.webp");
   background-position: 50% 80%; }
+  @media screen and (min-width: 768px) {
+    #restaurant-img-2 {
+      background-position: 50% 60%; } }
 
 #restaurant-img-3 {
-  background-image: url("../../../assets/images/a-la-francaise.webp");
+  background-image: url("../../../../assets/images/a-la-francaise.webp");
   background-position: 50% 80%; }
 
 #restaurant-img-4 {
-  background-image: url("../../../assets/images/le-delice-des-sens.webp");
+  background-image: url("../../../../assets/images/le-delice-des-sens.webp");
   background-position: 50% 80%; }
 
 .restaurant-img-display {
@@ -303,7 +319,8 @@ header {
   position: relative; }
 
 .restaurant-info {
-  padding: 15px; }
+  padding: 15px;
+  color: #000; }
   .restaurant-info:visited {
     color: #000; }
   .restaurant-info p {
