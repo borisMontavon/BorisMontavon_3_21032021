@@ -53,6 +53,7 @@
         text-transform: uppercase;
         font-weight: 300;
         position: relative;
+        margin-bottom: 25px;
 
         &::after {
             content: "";
@@ -63,5 +64,14 @@
             bottom: -5px;
             left: 0;
         }
+    }
+
+    a {
+        display: flex;
+        justify-content: space-between;
+        color: $black;
+        background-color: $white;
+        padding: 20px;
+        margin-bottom: 20px;
     }
 }
