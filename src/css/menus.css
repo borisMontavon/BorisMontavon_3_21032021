@@ -116,23 +116,51 @@ header {
 .plates a {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   color: #000;
   background-color: #fff;
-  padding: 10px;
+  padding-left: 10px;
   margin-bottom: 20px;
   box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.15);
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  overflow-x: hidden; }
+  .plates a:hover .check {
+    transform: translate3d(0, 0, 0); }
+    .plates a:hover .check i {
+      transform: rotate(365deg); }
   .plates a p {
     line-height: 25px; }
+  .plates a p:first-child {
+    margin-top: 10px; }
   .plates a p:last-child {
     font-weight: 300;
-    font-size: 0.9rem; }
-  .plates a span {
+    font-size: 0.9rem;
+    margin-bottom: 10px; }
+  .plates a .price {
     color: #333;
     font-weight: 500;
     font-size: 0.9rem;
-    margin-right: 15px; }
+    margin: 0 15px 10px 0; }
+  .plates a .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #99E2D0;
+    border-radius: 0 1rem 1rem 0;
+    transform: translate3d(100%, 0, 0);
+    transition: 0.3s; }
+    .plates a .check i {
+      color: #99E2D0;
+      background-color: #fff;
+      padding: 4px;
+      border-radius: 50%;
+      font-size: 0.9rem;
+      transition: 0.3s; }
+
+.plates .menu-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
 
 .heart-container {
   position: absolute;
