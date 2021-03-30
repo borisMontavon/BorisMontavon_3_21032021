@@ -53,7 +53,7 @@
         text-transform: uppercase;
         font-weight: 300;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
 
         &::after {
             content: "";
@@ -69,9 +69,28 @@
     a {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         color: $black;
         background-color: $white;
-        padding: 20px;
+        padding: 10px;
         margin-bottom: 20px;
+        box-shadow: $box-shadow rgba(0,0,0,0.15);
+        border-radius: 1rem;
+
+        p {
+            line-height: 25px;
+        }
+
+        p:last-child {
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+
+        span {
+            color: $jet;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-right: 15px;
+        }
     }
 }
