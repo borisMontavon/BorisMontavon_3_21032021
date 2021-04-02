@@ -44,11 +44,15 @@
 .menu-plates {
     background-color: $cultured;
     border-radius: 2.25rem 2.25rem 0 0;
-    padding: 30px 15px;
+    padding: 30px 15px 15px;
     transform: translate3d(0, -45px, 0);
 }
 
 .plates {
+    .spacing {
+        margin-bottom: 45px;
+    }
+
     h4 {
         text-transform: uppercase;
         font-weight: 300;
@@ -75,8 +79,9 @@
         margin-bottom: 20px;
         box-shadow: $box-shadow rgba(0,0,0,0.15);
         border-radius: 1rem;
-        overflow-x: hidden;
+        overflow: hidden;
         position: relative;
+        opacity: 0;
 
         @media screen and (min-width: $computer-breakpoint) {
             width: 400px;
@@ -118,6 +123,8 @@
         }
 
         .plate-title {
+            width: 250px;
+
             @media screen and (min-width: $computer-breakpoint) {
                 width: 330px;
                 transition: 0.5s;
@@ -165,4 +172,21 @@
 @keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(365deg); }
+}
+
+.animation-1 {
+    animation: slideUp 1.5s forwards 0s;
+}
+
+.animation-2 {
+    animation: slideUp 1.5s forwards 0.2s;
+}
+
+.animation-3 {
+    animation: slideUp 1.5s forwards 0.4s;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translate3d(0, 50%, 0); }
+    to { opacity: 1; transform: translate3d(0, 0, 0); }
 }
