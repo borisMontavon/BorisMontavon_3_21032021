@@ -15,8 +15,12 @@ header {
     img {
         width: 45%;
 
-        @media screen and (min-width: $tablet-breakpoint) {
+        @media screen and (max-width: $tablet-breakpoint) and (orientation: landscape) {
             width: 30%;
+        }
+
+        @media screen and (min-width: $tablet-breakpoint) {
+            width: 20%;
         }
 
         @media screen and (min-width: $computer-breakpoint) {

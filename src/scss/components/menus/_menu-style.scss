@@ -1,6 +1,10 @@
 #menu-img-1 {
     background-image: url("../../../../assets/images/la-palette-du-gout.webp");
     background-position: 50% 50%;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        background-position: 50% 60%;
+    }
 }
 
 #menu-img-2 {
@@ -11,11 +15,23 @@
 #menu-img-3 {
     background-image: url("../../../../assets/images/a-la-francaise.webp");
     background-position: 50% 50%;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        background-position: 50% 75%;
+    }
+
+    @media screen and (min-width: $computer-breakpoint) {
+        background-position: 50% 60%;
+    }
 }
 
 #menu-img-4 {
     background-image: url("../../../../assets/images/le-delice-des-sens.webp");
     background-position: 50% 50%;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        background-position: 50% 70%;
+    }
 }
 
 .menu-img {
@@ -46,6 +62,11 @@
     border-radius: 2.25rem 2.25rem 0 0;
     padding: 30px 15px 15px;
     transform: translate3d(0, -45px, 0);
+
+    @media screen and (max-width: 768px) and (orientation: landscape),
+    screen and (min-width: $tablet-breakpoint) {
+        padding: 30px 50px 15px;
+    }
 }
 
 .plates {
@@ -169,6 +190,13 @@
     }
 }
 
+.flex-container {
+    @media screen and (min-width: $computer-breakpoint) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 @keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(365deg); }
@@ -184,6 +212,10 @@
 
 .animation-3 {
     animation: slideUp 1.5s forwards 0.4s;
+}
+
+.animation-4 {
+    animation: slideUp 1.5s forwards 0.6s;
 }
 
 @keyframes slideUp {
