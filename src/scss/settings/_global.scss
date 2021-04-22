@@ -1,0 +1,26 @@
+/* -----Global styles----- */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $amethyst;
+    color: $white;
+    text-shadow: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $cultured;
+    font-family: $roboto;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,406 @@
+/* -----Raleway font import----- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* -----Variables----- */
+/* Colors */
+/* Font */
+/* Font-size */
+/* Breakpoint */
+/* -----Global styles----- */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box; }
+
+::selection {
+  background-color: #9356DC;
+  color: #fff;
+  text-shadow: none; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #F6F6F6;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+/* -----Header styles----- */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2; }
+  header img {
+    width: 45%; }
+    @media screen and (min-width: 768px) {
+      header img {
+        width: 30%; } }
+    @media screen and (min-width: 1200px) {
+      header img {
+        width: 10%; } }
+  header i {
+    font-size: 1.2rem;
+    color: #000;
+    position: absolute;
+    left: 30px;
+    top: 25px; }
+    @media screen and (min-width: 768px) {
+      header i {
+        font-size: 1.5rem;
+        top: 24px; } }
+
+#loader-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  -webkit-animation: fade 3s;
+  animation: fade 0.5s linear 3s forwards; }
+
+#loader {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border: 8px solid #EAEAEA;
+  border-radius: 50%;
+  border-top: 8px solid #9356DC;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+  @media screen and (min-width: 768px) {
+    #loader {
+      left: 45%;
+      width: 100px;
+      height: 100px; } }
+  @media screen and (min-width: 1200px) {
+    #loader {
+      left: 47%;
+      top: 40%;
+      width: 120px;
+      height: 120px; } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    z-index: 999; }
+  100% {
+    opacity: 0;
+    z-index: -1; } }
+
+/* -----Restaurant location / picker styles----- */
+#localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #EAEAEA; }
+  #localisation button {
+    background-color: transparent;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+    padding: 15px; }
+    @media screen and (min-width: 1200px) {
+      #localisation button {
+        cursor: pointer; } }
+    #localisation button i {
+      margin-right: 15px; }
+
+#restaurant-picker {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 50px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    #restaurant-picker {
+      flex-flow: column wrap; } }
+  #restaurant-picker h2 {
+    margin-bottom: 15px; }
+  #restaurant-picker p {
+    font-weight: 300;
+    margin-bottom: 25px; }
+  #restaurant-picker button {
+    background: #eb73da;
+    background: linear-gradient(170deg, #eb73da 0%, #a35cdc 100%);
+    opacity: 1;
+    border: none;
+    border-radius: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 15px 20px;
+    -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.4);
+    transition: 0.3s; }
+    @media screen and (min-width: 1200px) {
+      #restaurant-picker button {
+        border-radius: 50px;
+        font-size: 1rem;
+        padding: 20px 25px;
+        cursor: pointer; }
+        #restaurant-picker button:hover {
+          opacity: 0.85;
+          -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.65);
+          box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.65); } }
+
+#running {
+  background-color: #fff; }
+
+#running-skin {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 90%; }
+  #running-skin h2 {
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px), screen and (max-width: 768px) and (orientation: landscape) {
+      #running-skin h2 {
+        text-align: center; } }
+
+#running-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end; }
+  @media screen and (max-width: 768px) and (orientation: landscape) {
+    #running-container {
+      justify-content: center; } }
+  @media screen and (min-width: 768px) {
+    #running-container {
+      flex-flow: column wrap; } }
+  @media screen and (min-width: 1200px) {
+    #running-container {
+      flex-flow: row wrap;
+      justify-content: center; } }
+
+.running-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .running-item {
+      justify-content: center; } }
+  .running-item span {
+    background-color: #9356DC;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    transform: translate3d(-15px, 0, 0); }
+    @media screen and (min-width: 768px) {
+      .running-item span {
+        position: relative;
+        transform: translate3d(15px, 0, 0); } }
+  .running-item p {
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 25px 70px 25px 40px;
+    border-radius: 1.25rem;
+    -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2);
+    width: 325px; }
+    @media screen and (min-width: 768px) {
+      .running-item p {
+        width: 375px; } }
+    .running-item p i {
+      color: #7E7E7E;
+      font-size: 1.4rem;
+      margin-right: 20px; }
+  .running-item .running-item-color-skin {
+    background-color: #F5EDFF; }
+
+#restaurants {
+  margin: 50px auto;
+  width: 90%; }
+  @media screen and (min-width: 768px) {
+    #restaurants {
+      margin: 50px auto 75px;
+      width: 60%; } }
+  @media screen and (min-width: 1200px) {
+    #restaurants {
+      margin: 50px auto 100px;
+      width: 60%; } }
+  #restaurants h2 {
+    margin-bottom: 20px; }
+
+@media screen and (min-width: 1200px) {
+  #restaurant-list {
+    display: grid;
+    row-gap: 60px;
+    column-gap: 100px;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.restaurant-container {
+  background-color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 1rem;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2); }
+  @media screen and (min-width: 768px) {
+    .restaurant-container {
+      margin-bottom: 40px; } }
+  @media screen and (min-width: 1200px) {
+    .restaurant-container {
+      margin-bottom: 0; } }
+  .restaurant-container span {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 8px 15px;
+    border-radius: 0.15rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px; }
+
+#restaurant-img-1 {
+  background-image: url("../../../../assets/images/la-palette-du-gout.webp");
+  background-position: 50% 80%; }
+
+#restaurant-img-2 {
+  background-image: url("../../../../assets/images/la-note-enchantee.webp");
+  background-position: 50% 80%; }
+  @media screen and (min-width: 768px) {
+    #restaurant-img-2 {
+      background-position: 50% 60%; } }
+
+#restaurant-img-3 {
+  background-image: url("../../../../assets/images/a-la-francaise.webp");
+  background-position: 50% 80%; }
+
+#restaurant-img-4 {
+  background-image: url("../../../../assets/images/le-delice-des-sens.webp");
+  background-position: 50% 80%; }
+
+.restaurant-img-display {
+  width: 100%;
+  height: 175px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem 1rem 0 0; }
+
+.restaurant-label {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative; }
+
+.restaurant-info {
+  padding: 15px;
+  color: #000; }
+  .restaurant-info:visited {
+    color: #000; }
+  .restaurant-info p {
+    line-height: 25px; }
+    .restaurant-info p:last-child {
+      font-weight: 300; }
+
+.heart-container {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  z-index: 99; }
+
+.heart-clip {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+  clip-path: url(#svgPath); }
+  .heart-clip:hover::before {
+    transform: scale(1);
+    opacity: 1; }
+  .heart-clip::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #9356DC;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.2s linear, opacity 0.2s linear;
+    transform-origin: center 60%; }
+
+.heart-stroke {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  fill: #9356DC; }
+
+footer {
+  width: 100%;
+  height: 225px;
+  background-color: #333;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; }
+  footer img {
+    width: 30%;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      footer img {
+        width: 20%; } }
+    @media screen and (min-width: 1200px) {
+      footer img {
+        width: 12.5%; } }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      text-align: center; }
+      footer ul li a {
+        color: #fff;
+        font-weight: 300;
+        line-height: 30px; }
+        footer ul li a:visited {
+          color: #fff; }
+        @media screen and (min-width: 1200px) {
+          footer ul li a {
+            transition: 0.3s; }
+            footer ul li a:hover {
+              color: #9356DC; } }
+        footer ul li a i {
+          padding-right: 15px;
+          font-size: 0.9rem; }
+  footer .fw-bold {
+    font-weight: 500; }

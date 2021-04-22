@@ -1,0 +1,31 @@
+/* -----Raleway font import----- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/* -----Variables----- */
+
+/* Colors */
+$amethyst: #9356DC;
+$lavender-web: #F5EDFF;
+$rose-pink: #FF79DA;
+$middle-blue-green: #99E2D0;
+$spanish-viridian: #008766;
+$cultured: #F6F6F6;
+$platinum: #EAEAEA;
+$grey-web: #7E7E7E;
+$jet: #333;
+$white: #fff;
+$black: #000;
+
+/* Font */
+$shrikhand: 'Shrikhand', cursive;
+$roboto: 'Roboto', sans-serif;
+
+/* Font-size */
+$mobile-link-size: 0.85rem;
+$tablet-link-size: 0.9rem;
+$desktop-link-size: 1rem;
+
+/* Breakpoint */
+$tablet-breakpoint: 768px;
+$computer-breakpoint: 1200px;

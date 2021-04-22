@@ -1,0 +1,79 @@
+/* -----Restaurant location / picker styles----- */
+
+#localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: $platinum;
+
+    button {
+        background-color: transparent;
+        border: none;
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: $desktop-link-size;
+        color: $jet;
+        padding: 15px;
+
+        @media screen and (min-width: $computer-breakpoint) {
+            cursor: pointer;
+        }
+
+        i {
+            margin-right: 15px;
+        }
+    }
+}
+
+#restaurant-picker {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $cultured;
+    padding: 50px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        flex-flow: column wrap;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+
+    button {
+        background: rgb(235,115,218);
+        background: linear-gradient(170deg, rgba(235,115,218,1) 0%, rgba(163,92,220,1) 100%);
+        opacity: 1;
+        border: none;
+        border-radius: 25px;
+        font-family: $roboto;
+        font-weight: 500;
+        font-size: $tablet-link-size;
+        color: $white;
+        padding: 15px 20px;
+        -webkit-box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.4);
+        box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.4);
+        transition: 0.3s;
+
+        @media screen and (min-width: $computer-breakpoint) {
+            border-radius: 50px;
+            font-size: $desktop-link-size;
+            padding: 20px 25px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.85;
+                -webkit-box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.65);
+                box-shadow: 0px 5px 10px -2px rgba(0,0,0,0.65);
+            }
+        }
+    }
+}
