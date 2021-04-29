@@ -51,6 +51,9 @@ header {
     @media screen and (min-width: 1200px) {
       header img {
         width: 10%; } }
+  @media screen and (min-width: 1200px) {
+    header a {
+      display: none; } }
   header i {
     font-size: 1.2rem;
     color: #000;
@@ -62,39 +65,23 @@ header {
         font-size: 1.5rem;
         top: 24px; } }
 
-#menu-img-1 {
-  background-image: url("../../../../assets/images/la-palette-du-gout.webp");
-  background-position: 50% 50%; }
-  @media screen and (min-width: 768px) {
-    #menu-img-1 {
-      background-position: 50% 60%; } }
-
-#menu-img-2 {
-  background-image: url("../../../../assets/images/la-note-enchantee.webp");
-  background-position: 50% 50%; }
-
-#menu-img-3 {
-  background-image: url("../../../../assets/images/a-la-francaise.webp");
-  background-position: 50% 50%; }
-  @media screen and (min-width: 768px) {
-    #menu-img-3 {
-      background-position: 50% 75%; } }
-  @media screen and (min-width: 1200px) {
-    #menu-img-3 {
-      background-position: 50% 60%; } }
-
-#menu-img-4 {
-  background-image: url("../../../../assets/images/le-delice-des-sens.webp");
-  background-position: 50% 50%; }
-  @media screen and (min-width: 768px) {
-    #menu-img-4 {
-      background-position: 50% 70%; } }
-
 .menu-img {
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 250px; }
+  height: 250px;
+  overflow: hidden;
+  position: relative; }
+  .menu-img img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .menu-img .img-2 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .menu-intro {
   display: flex;
