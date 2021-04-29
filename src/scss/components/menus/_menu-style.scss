@@ -1,44 +1,60 @@
-#menu-img-1 {
-    background-image: url("../../../../assets/images/la-palette-du-gout.webp");
-    background-position: 50% 50%;
+// #menu-img-1 {
+//     background-image: url("../../../../assets/images/la-palette-du-gout.webp");
+//     background-position: 50% 50%;
 
-    @media screen and (min-width: $tablet-breakpoint) {
-        background-position: 50% 60%;
-    }
-}
+//     @media screen and (min-width: $tablet-breakpoint) {
+//         background-position: 50% 60%;
+//     }
+// }
 
-#menu-img-2 {
-    background-image: url("../../../../assets/images/la-note-enchantee.webp");
-    background-position: 50% 50%;
-}
+// #menu-img-2 {
+//     background-image: url("../../../../assets/images/la-note-enchantee.webp");
+//     background-position: 50% 50%;
+// }
 
-#menu-img-3 {
-    background-image: url("../../../../assets/images/a-la-francaise.webp");
-    background-position: 50% 50%;
+// #menu-img-3 {
+//     background-image: url("../../../../assets/images/a-la-francaise.webp");
+//     background-position: 50% 50%;
 
-    @media screen and (min-width: $tablet-breakpoint) {
-        background-position: 50% 75%;
-    }
+//     @media screen and (min-width: $tablet-breakpoint) {
+//         background-position: 50% 75%;
+//     }
 
-    @media screen and (min-width: $computer-breakpoint) {
-        background-position: 50% 60%;
-    }
-}
+//     @media screen and (min-width: $computer-breakpoint) {
+//         background-position: 50% 60%;
+//     }
+// }
 
-#menu-img-4 {
-    background-image: url("../../../../assets/images/le-delice-des-sens.webp");
-    background-position: 50% 50%;
+// #menu-img-4 {
+//     background-image: url("../../../../assets/images/le-delice-des-sens.webp");
+//     background-position: 50% 50%;
 
-    @media screen and (min-width: $tablet-breakpoint) {
-        background-position: 50% 70%;
-    }
-}
+//     @media screen and (min-width: $tablet-breakpoint) {
+//         background-position: 50% 70%;
+//     }
+// }
 
 .menu-img {
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 250px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .img-2 {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 .menu-intro {
