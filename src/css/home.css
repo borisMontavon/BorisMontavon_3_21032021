@@ -325,31 +325,14 @@ header {
     font-weight: 500;
     letter-spacing: 0.5px; }
 
-#restaurant-img-1 {
-  background-image: url("../../../../assets/images/la-palette-du-gout.webp");
-  background-position: 50% 80%; }
-
-#restaurant-img-2 {
-  background-image: url("../../../../assets/images/la-note-enchantee.webp");
-  background-position: 50% 80%; }
-  @media screen and (min-width: 768px) {
-    #restaurant-img-2 {
-      background-position: 50% 60%; } }
-
-#restaurant-img-3 {
-  background-image: url("../../../../assets/images/a-la-francaise.webp");
-  background-position: 50% 80%; }
-
-#restaurant-img-4 {
-  background-image: url("../../../../assets/images/le-delice-des-sens.webp");
-  background-position: 50% 80%; }
-
 .restaurant-img-display {
   width: 100%;
   height: 175px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 1rem 1rem 0 0; }
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden; }
+  .restaurant-img-display img {
+    width: 100%;
+    height: auto; }
 
 .restaurant-label {
   display: flex;
