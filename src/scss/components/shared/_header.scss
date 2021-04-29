@@ -28,6 +28,12 @@ header {
         }
     }
 
+    a {
+        @media screen and (min-width: $computer-breakpoint) {
+            display: none;
+        }
+    }
+
     i {
         font-size: 1.2rem;
         color: $black;
