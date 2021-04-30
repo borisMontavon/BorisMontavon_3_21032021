@@ -234,8 +234,7 @@ header {
   height: 100%;
   position: relative;
   overflow: hidden;
-  z-index: 99;
-  clip-path: url(.svgPath); }
+  z-index: 99; }
   .heart-clip:hover::before {
     transform: scale(1);
     opacity: 1; }
