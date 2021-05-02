@@ -32,8 +32,22 @@
         font-family: $shrikhand;
     }
 
-    .heart-container {
-        margin-right: 25px;
+    i {
+        font-size: 1.3rem;
+        color: $white;
+        background-color: $jet-o;
+        border-radius: 2rem;
+        padding: 10px;
+        margin-right: 15px;
+        cursor: pointer;
+
+        @media screen and (min-width: $computer-breakpoint) {
+            transition: 0.3s;
+
+            &:hover {
+                background-color: $amethyst;
+            }
+        }
     }
 }
 
