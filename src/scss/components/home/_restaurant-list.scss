@@ -58,42 +58,45 @@
     }
 }
 
-#restaurant-img-1 {
-    background-image: url("../../../../assets/images/la-palette-du-gout.webp");
-    background-position: 50% 80%;
-}
-
-#restaurant-img-2 {
-    background-image: url("../../../../assets/images/la-note-enchantee.webp");
-    background-position: 50% 80%;
-
-    @media screen and (min-width: $tablet-breakpoint) {
-        background-position: 50% 60%;
-    }
-}
-
-#restaurant-img-3 {
-    background-image: url("../../../../assets/images/a-la-francaise.webp");
-    background-position: 50% 80%;
-}
-
-#restaurant-img-4 {
-    background-image: url("../../../../assets/images/le-delice-des-sens.webp");
-    background-position: 50% 80%;
-}
-
 .restaurant-img-display {
     width: 100%;
     height: 175px;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+        @media screen and (min-width: $tablet-breakpoint) {
+            height: auto;
+        }
+    }
 }
 
 .restaurant-label {
     display: flex;
     flex-flow: row wrap;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+        font-size: 1.3rem;
+        color: $white;
+        background-color: $jet-o;
+        border-radius: 2rem;
+        padding: 10px;
+        margin-right: 15px;
+        cursor: pointer;
+
+        @media screen and (min-width: $computer-breakpoint) {
+            transition: 0.3s;
+
+            &:hover {
+                background-color: $amethyst;
+            }
+        }
+    }
 }
 
 .restaurant-info {
